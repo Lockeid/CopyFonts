@@ -2,14 +2,14 @@ from Tkinter import *
 from shutil import *
 
 def CopyFonts():
-    copyfile(entry1.get(),"ARIALN.ttf")
-    copyfile(entry1.get(),"MORPHEUS.ttf")
-    copyfile(entry1.get(),"FRIZQT__.ttf")
-    copyfile(entry1.get(),"skurri.ttf")
+    copyfile(entry1.get() + ".ttf","ARIALN.ttf")
+    copyfile(entry1.get() + ".ttf","MORPHEUS.ttf")
+    copyfile(entry1.get() + ".ttf","FRIZQT__.ttf")
+    copyfile(entry1.get() + ".ttf","skurri.ttf")
     
 
 fen = Tk()
-text1 = Label(fen, text = "Nom de la police (ne pas oublier l'extension .ttf")
+text1 = Label(fen, text = "Nom de la police:  ")
 entry1 = Entry(fen)
 button1 = Button(fen,text="Copier",command = CopyFonts)
 button2 = Button(fen,text="Quitter", command = fen.quit)
